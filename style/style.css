@@ -22,6 +22,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -71,7 +75,7 @@ img {
 
 .page-header__list {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-between;
     max-width: 940px;
     margin: 0 auto;
@@ -115,15 +119,22 @@ img {
 .contacts__tel::before {
     position: absolute;
     content: "";
-    background: url("../img/phone.svg");
     width: 20px;
     height: 20px;
+    background: url("../img/whatsapp_icon.svg");
     margin-left: -30px;
 }
 
+.contacts__tel-link {
+    display: block;
+}
+
+
 .contacts__address {
     padding-left: 30px;
+    align-self: center;
 }
+
 
 .contacts__address::before {
     position: absolute;
@@ -133,6 +144,14 @@ img {
     height: 30px;
     margin-left: -30px;
     margin-top: -5px;
+}
+.logo {
+    text-align: center;
+}
+
+.logo__title {
+    display: block;
+    text-transform: uppercase;
 }
 
 .page-header__nav {
@@ -180,9 +199,8 @@ img {
 }
 
 .slide--active img {
-    height: 370px;
+    height: 530px;
     width: 100%;
-    object-fit: cover;
 }
 
 /* Partners */
@@ -194,11 +212,36 @@ img {
 .partners__list {
     display: flex;
     justify-content: space-between;
-    gap: 10px;
 }
 
 .partners__img {
     height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.partners__wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.partners__button {
+    color: #909090;
+    border: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font: inherit;
+    font-size: 40px;
+    outline: none;
+}
+
+.partners__button:focus,
+.partners__button:hover,
+.partners__button:active {
+    background-color: #71b5ed;
+    border-radius: 10px;
+    color: #000000;
 }
 
 /* Map */
@@ -219,20 +262,11 @@ img {
     margin-bottom: 30px;
 }
 
-.page-footer__list  {
+.page-footer__list {
     display: flex;
     justify-content: space-between;
 }
 
 .page-footer__item {
     flex-basis: 20%;
-}
-
-.social__list {
-    display: flex;
-    justify-content: space-between;
-    width: 30%;
-    margin: 0 auto;
-    flex: 1 0 0;
-    align-items: center;
 }

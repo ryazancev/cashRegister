@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <title>Кассовые аппараты</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style/style.css ">
     <script src="./script/index.js" type="module" defer></script>
 </head>
@@ -17,8 +18,13 @@
     <div class="page-header__top">
         <ul class="page-header__list contacts">
             <li class="page-header__item contacts__time">пн-пт: с 9:00 до 18:00 сб-вс: выходной</li>
-            <li class="page-header__item contacts__email">cash@cash.com</li>
-            <li class="page-header__item contacts__tel">8-999-123-45-67</li>
+            <li class="page-header__item contacts__email">
+                <a class="contacts__email-link" href="mailto:79956696619@ya.ru">79956696619@ya.ru</a>
+            </li>
+            <li class="page-header__item contacts__tel">
+                <a class="contacts__tel-link" href="tel:+7 (995) 669-66-19">+7 (995) 669-66-19</a>
+                <a class="contacts__tel-link" href="tel:9-999-123-45-67">9-999-123-45-67</a>
+            </li>
         </ul>
     </div>
 
@@ -28,6 +34,7 @@
                 <a class="logo__link" href="#">
                     <img class="logo__img" src="./img/logo.webp" alt="Логотип компании" width="100" height="100">
                 </a>
+                <span class="logo__title">Кассовые аппараты</span>
             </li>
             <li class="page-header__item contacts__address">36 Воронежская область, г. Воронеж, Ленинский проспект, д. 5
             </li>
@@ -37,9 +44,9 @@
     <nav class="page-header__nav nav-site">
         <ul class="nav-site__list">
             <li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
-            <li class="nav-site__item"><a class="nav-site__link" href="#">Блок 2</a></li>
-            <li class="nav-site__item"><a class="nav-site__link" href="#">Блок 3</a></li>
-            <li class="nav-site__item"><a class="nav-site__link" href="#">Блок 4</a></li>
+            <li class="nav-site__item"><a class="nav-site__link" href="#about">О нас</a></li>
+            <li class="nav-site__item"><a class="nav-site__link" href="#partners">Наши партнеры</a></li>
+            <li class="nav-site__item"><a class="nav-site__link" href="#contacts">Контакты</a></li>
         </ul>
     </nav>
 
@@ -51,18 +58,19 @@
         <div class="slider--wrapper">
             <ul class="main-slider">
                 <li class="slide slide--active">
-                    <img src="./img/slider-1.webp"
-                         alt="Логотип компании 'Меркурий'. Государственная информационная система">
+                    <img src="img/slider-1.webp"
+                         alt="Логотип компании 'Эватор'">
                 </li>
-                <li class="slide"><img src="./img/slider-2.webp" alt="Логотип компании 'ЕГАИС'"></li>
-                <li class="slide"><img src="./img/slider-3.webp" alt="Логтип компании 'Эватор'"></li>
+                <li class="slide"><img src="./img/slider-2.webp" alt="Логотип компании 'Честный знак'"></li>
                 <li class="slide"><img src="./img/slider-4.webp"
-                                       alt="Логтип компании 'Честный знак'. Наицональная система цифровой маркировки">
+                                       alt="Логтип компании 'ЕГАИС'">
+                </li><li class="slide"><img src="./img/slider-5.webp"
+                                       alt="Логтип компании 'Меркурий'">
                 </li>
             </ul>
         </div>
 
-        <article class="partners">
+        <article id="partners" class="partners">
             <h2 class="partners__title">Наши партнеры</h2>
 
             <div class="partners__wrapper">
@@ -75,7 +83,16 @@
                                                     alt="Логотип компании 'Платформа ОФД'"></li>
                     <li class="partners__item"><img class="partners__img" src="./img/partner-4.webp"
                                                     alt="Логотип компании 'Первый ОФД'"></li>
+                    <li class="partners__item"><img class="partners__img" src="./img/partner-6.webp"
+                                                    alt="Логотип компании 'Крипто Про'"></li>
+                    <li class="partners__item"><img class="partners__img" src="./img/partner-7.webp"
+                                                    alt="Логотип компании '1с'"></li>
+                    <li class="partners__item"><img class="partners__img" src="./img/partner-8.webp"
+                                                    alt="Логотип компании 'Триар'"></li>
+
                 </ul>
+                <button class="partners__button partners__button--prev">&#8249;</button>
+                <button class="partners__button partners__button--next">&#8250;</button>
             </div>
         </article>
 
@@ -98,29 +115,21 @@
 
     <div class="container">
         <div class="page-footer__wrapper">
-            <ul class="page-footer__list footer-contacts">
-                <li class="page-footer__item contacts__tel">8-999-123-45-67</li>
-                <li class="page-footer__item contacts__email">cash@cash.com</li>
+            <ul id="contacts" class="page-footer__list footer-contacts">
+                <li class="page-footer__item contacts__tel">
+                    <a class="contacts__tel-link" href="tel:+7 (995) 669-66-19">+7 (995) 669-66-19</a>
+                    <a class="contacts__tel-link" href="tel:9-999-123-45-67">9-999-123-45-67</a>
+                </li>
+                <li class="page-footer__item contacts__email">
+                    <a class="contacts__email-link" href="mailto:79956696619@ya.ru">79956696619@ya.ru</a>
+                </li>
                 <li class="page-footer__item contacts__time">пн-пт: с 9:00 до 18:00 сб-вс: выходной</li>
-                <li class="page-footer__item contacts__address">36 Воронежская область, г. Воронеж, ул.
-                    Кольцовская, д. 58А, оф. 103
+                <li class="page-footer__item contacts__address">36 Воронежская область, г. Россошь, проспект Труда,
+                    11В/13А
                 </li>
             </ul>
         </div>
 
-        <div class="page-footer__social social">
-            <ul class="social__list">
-                <li class="social__item"><a class="social__link" href="#">
-                    <img class="social__img" src="./img/vk.svg" alt="vk" width="65" height="65">
-                </a></li>
-                <li class="social__item"><a class="social__link" href="#">
-                    <img class="social__img" src="./img/fb.svg" alt="facebook" width="60" height="60">
-                </a></li>
-                <li class="social__item"><a class="social__link" href="#">
-                    <img class="social__img" src="./img/inst.svg" alt="instagram" width="60" height="60">
-                </a></li>
-            </ul>
-        </div>
     </div>
 
 </footer>
