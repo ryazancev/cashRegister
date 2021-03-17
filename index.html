@@ -17,13 +17,16 @@
 
     <div class="page-header__top">
         <ul class="page-header__list contacts">
-            <li class="page-header__item contacts__time">пн-пт: с 9:00 до 18:00 сб-вс: выходной</li>
+            <li class="page-header__item contacts__time">
+                <span>пн-пт: с 9:00 до 18:00</span>
+                <span>сб-вс: выходной</span>
+            </li>
             <li class="page-header__item contacts__email">
                 <a class="contacts__email-link" href="mailto:79956696619@ya.ru">79956696619@ya.ru</a>
             </li>
             <li class="page-header__item contacts__tel">
                 <a class="contacts__tel-link" href="tel:+7 (995) 669-66-19">+7 (995) 669-66-19</a>
-                <a class="contacts__tel-link" href="tel:9-999-123-45-67">9-999-123-45-67</a>
+                <a class="contacts__tel-link" href="tel:+7 (995) 669-66-19">+7 (995) 669-66-19</a>
             </li>
         </ul>
     </div>
@@ -38,6 +41,9 @@
             </li>
             <li class="page-header__item contacts__address">36 Воронежская область, г. Воронеж, Ленинский проспект, д. 5
             </li>
+            <li class="page-header__item contacts__address">36 Воронежская область, г. Россошь, проспект Труда,
+                11В/13А
+            </li>
         </ul>
     </div>
 
@@ -45,7 +51,7 @@
         <ul class="nav-site__list">
             <li class="nav-site__item"><a class="nav-site__link" href="#">Главная</a></li>
             <li class="nav-site__item"><a class="nav-site__link" href="#about">О нас</a></li>
-            <li class="nav-site__item"><a class="nav-site__link" href="#partners">Наши партнеры</a></li>
+            <li class="nav-site__item"><a class="nav-site__link" href="#partners">Наши услуги</a></li>
             <li class="nav-site__item"><a class="nav-site__link" href="#contacts">Контакты</a></li>
         </ul>
     </nav>
@@ -55,6 +61,7 @@
 <main class="page-main">
 
     <div class="container">
+
         <div class="slider--wrapper">
             <ul class="main-slider">
                 <li class="slide slide--active">
@@ -64,11 +71,28 @@
                 <li class="slide"><img src="./img/slider-2.webp" alt="Логотип компании 'Честный знак'"></li>
                 <li class="slide"><img src="./img/slider-4.webp"
                                        alt="Логтип компании 'ЕГАИС'">
-                </li><li class="slide"><img src="./img/slider-5.webp"
+                </li>
+                <li class="slide"><img src="./img/slider-5.webp"
                                        alt="Логтип компании 'Меркурий'">
                 </li>
             </ul>
         </div>
+
+        <section id="about" class="about clearfix">
+            <h1 class="about__title">О нас</h1>
+            <img class="about__image" src="./img/about-image.jpeg" alt="" width="400">
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam debitis,
+                dignissimos ea eligendi enim excepturi facilis hic iste laboriosam nam odio officiis quasi, quos
+                repellat soluta tempora. Consequuntur est excepturi fuga itaque natus pariatur, vitae? Dicta distinctio
+                dolorem facere, iure laborum laudantium magni modi quae quis sequi totam ut?
+            </p>
+            <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam debitis,
+                dignissimos ea eligendi enim excepturi facilis hic iste laboriosam nam odio officiis quasi, quos
+                repellat soluta tempora. Consequuntur est excepturi fuga itaque natus pariatur, vitae? Dicta distinctio
+                dolorem facere, iure laborum laudantium magni modi quae quis sequi totam ut?
+            </p>
+
+        </section>
 
         <article id="partners" class="partners">
             <h2 class="partners__title">Наши партнеры</h2>
@@ -115,19 +139,16 @@
 
     <div class="container">
         <div class="page-footer__wrapper">
-            <ul id="contacts" class="page-footer__list footer-contacts">
-                <li class="page-footer__item contacts__tel">
-                    <a class="contacts__tel-link" href="tel:+7 (995) 669-66-19">+7 (995) 669-66-19</a>
-                    <a class="contacts__tel-link" href="tel:9-999-123-45-67">9-999-123-45-67</a>
-                </li>
-                <li class="page-footer__item contacts__email">
-                    <a class="contacts__email-link" href="mailto:79956696619@ya.ru">79956696619@ya.ru</a>
-                </li>
-                <li class="page-footer__item contacts__time">пн-пт: с 9:00 до 18:00 сб-вс: выходной</li>
-                <li class="page-footer__item contacts__address">36 Воронежская область, г. Россошь, проспект Труда,
-                    11В/13А
-                </li>
-            </ul>
+            <a class="another-project" href="https://profocen-vrn.ru/">Наши проекты
+                <svg class="arrow-3-icon" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <g fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linejoin="round" stroke-miterlimit="10">
+                        <circle class="arrow-3-iconcircle" cx="16" cy="16" r="15.12"></circle>
+                        <path class="arrow-3-icon--arrow" d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98"></path>
+                    </g>
+                </svg>
+            </a>
+            <small>ИП Морозов Александр Владиславович <br> Юридический адрес организации 394029, Россия, Воронежская
+                Обл, Г Воронеж, ПР-КТ Ленинский, Д 5. ИНН 366318600864, ОГРН 321366800020990</small>
         </div>
 
     </div>

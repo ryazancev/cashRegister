@@ -1,5 +1,5 @@
 class Carousel {
-    constructor({main, wrap, next, prev, infinity = false, slidesToShow = 3, responsive = []}) {
+    constructor({main, wrap, next, prev, infinity = true, slidesToShow = 3, responsive = []}) {
         if (!main || !wrap) { // Если мы не передали обертку слайдера и обертку слайдов
             console.warn('slider-carousel: Необходимо 2 свойства, "main" и "wrap"!');
         }
@@ -101,68 +101,6 @@ class Carousel {
             }
             this.wrap.style.transform = `translateX(-${this.options.position * this.options.widthSlide}%)`;
             //Перемещаем слайды вперед
-        }
-    }
-
-    addArrow() { // Добавим кнопки если их нет в разметке
-        try {
-            this.prev = document.createElement('button');
-            this.next = document.createElement('button');
-            this.prev.innerHTML = `<div class="arrow arrow--left "></div>`;
-            this.next.innerHTML = `<div class="arrow arrow--right"></div>`;
-            this.prev.className = 'slider__prev';
-            this.next.className = 'slider__next';
-            this.main.append(this.prev);
-            this.main.append(this.next);
-
-            const style = document.createElement('style');
-            style.textContent = `
-			.slider__prev,
-			.slider__next {
-				position: absolute;
-				margin: 0 10px;
-				width: 40px;
-				height: 40px;
-				font-size: 20px;
-				border: none;
-				border-radius: 50px;
-				background-color: #f4d11a;
-				cursor: pointer;
-			}
-			.arrow {
-				width: 15px;
-				height: 15px;
-				border-top: 2px solid #000;
-				border-right: 2px solid #000;
-			}
-			.arrow--left {
-				transform: rotate(-135deg);
-			}
-			.arrow--right {
-				transform: rotate(45deg);
-			}
-			.slider__next {
-				top: 50px;
-				right: 0px;
-				padding-left: 12px;
-				border-left-color: #24182e;
-			}
-			.slider__prev {
-				top: 50px;
-				left: 0px;
-				padding-left: 12px;
-				border-right-color: #521833;	
-			}
-			.slider__prev:hover,
-			.slider__next:hover,
-			.slider__prev:focus,
-			.slider__next:focus {
-				outline: transparent;
-			}
-		`;
-            document.head.append(style);
-        } catch (error) {
-            console.warn(error);
         }
     }
 

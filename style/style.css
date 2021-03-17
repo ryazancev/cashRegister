@@ -62,12 +62,11 @@ img {
 .page-header__top {
     min-height: 57px;
     background: #242424;
-    color: #909090;
+    color: #ffffff;
     padding: 20px 0;
 }
 
 .page-header__bottom {
-    padding-top: 30px;
     padding-bottom: 50px;
     line-height: 1em;
     background: #71b5ed;
@@ -90,6 +89,9 @@ img {
     margin-left: 30px;
 }
 
+.contacts__time span {
+    display: block;
+}
 .contacts__time::before {
     position: absolute;
     content: "";
@@ -186,7 +188,7 @@ img {
 
 /* Slider */
 .slider--wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .slide {
@@ -195,12 +197,41 @@ img {
 
 .slide--active {
     display: block;
-    transform-style: preserve-3d;
 }
 
 .slide--active img {
     height: 530px;
     width: 100%;
+}
+
+/* About */
+
+.about {
+    margin-bottom: 50px;
+}
+
+.about__title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about__image {
+    float: right;
+}
+
+.about__text {
+    margin-bottom: 40px;
+}
+
+.about__text:last-child {
+    margin: 0;
+}
+
+.clearfix::after {
+    content: "";
+
+    display: table;
+    clear: both;
 }
 
 /* Partners */
@@ -222,7 +253,7 @@ img {
 
 .partners__wrapper {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .partners__button {
@@ -233,14 +264,12 @@ img {
     height: 50px;
     font: inherit;
     font-size: 40px;
+    line-height: 40px;
     outline: none;
 }
 
 .partners__button:focus,
-.partners__button:hover,
-.partners__button:active {
-    background-color: #71b5ed;
-    border-radius: 10px;
+.partners__button:hover {
     color: #000000;
 }
 
@@ -256,17 +285,33 @@ img {
     background-color: #71b5ed;
     padding: 20px 0;
     color: #ffffff;
+    margin-top: -5px;
 }
 
-.page-footer__wrapper {
-    margin-bottom: 30px;
+.another-project {
+    color: #ffffff;
+    height: 18px;
 }
 
-.page-footer__list {
-    display: flex;
-    justify-content: space-between;
+.another-project .arrow-3-icon {
+    position: relative;
+    top: -1px;
+    transition: transform 0.3s ease;
+    vertical-align: middle;
+}
+.another-project .arrow-3-iconcircle {
+    transition: stroke-dashoffset .3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+}
+.another-project:hover .arrow-3-icon {
+    transform: translate3d(5px, 0, 0);
+}
+.another-project:hover .arrow-3-iconcircle {
+    stroke-dashoffset: 0;
 }
 
-.page-footer__item {
-    flex-basis: 20%;
+small {
+    display: block;
+    margin-top: 20px;
 }
