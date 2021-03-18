@@ -200,8 +200,9 @@ img {
 }
 
 .slide--active img {
-    height: 530px;
+    height: 370px;
     width: 100%;
+    object-fit: cover;
 }
 
 /* About */
