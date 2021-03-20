@@ -52,6 +52,11 @@ img {
     height: auto;
 }
 
+h1,h2,h3,p {
+    margin: 0;
+    padding: 0;
+}
+
 /* Container */
 .container {
     max-width: 940px;
@@ -210,6 +215,10 @@ img {
     margin-bottom: 50px;
 }
 
+.about__wrapper {
+    margin-bottom: 40px;
+}
+
 .about__title {
     text-align: center;
     margin-bottom: 40px;
@@ -232,6 +241,49 @@ img {
 
     display: table;
     clear: both;
+}
+
+/* Services */
+.services__main-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.accordion {
+    position: relative;
+    background-color: #eee;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.accordion::after {
+    content: "+";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+}
+
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion__panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
 }
 
 /* Partners */
