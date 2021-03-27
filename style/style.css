@@ -192,16 +192,23 @@ h1,h2,h3,p {
 }
 
 /* Slider */
+
 .slider--wrapper {
     margin-bottom: 50px;
+    overflow: hidden;
 }
 
 .slide {
-    display: none;
+    width: 0;
+    height: 0;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in;
 }
 
 .slide--active {
-    display: block;
+    transform: translateX(0);
+    height: 100%;
+    width: 100%;
 }
 
 .slide--active img {
@@ -266,12 +273,16 @@ h1,h2,h3,p {
     cursor: pointer;
 }
 
-.accordion::after {
-    content: "+";
-    width: 20px;
-    height: 20px;
-    position: absolute;
-    right: 0;
+.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
 }
 
 .active,
@@ -284,6 +295,10 @@ h1,h2,h3,p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-out;
+}
+
+.services__item:last-child {
+    margin-bottom: 30px;
 }
 
 /* Partners */

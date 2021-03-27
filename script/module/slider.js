@@ -24,7 +24,7 @@ const slider = () => {
         nextSlide(slide, currentSlide, 'slide--active');
     };
 
-    const startSlide = (time = 2500) => {
+    const startSlide = (time = 3500) => {
         interval = setInterval(autoPlaySlide, time);
     };
 
