@@ -199,16 +199,11 @@ h1,h2,h3,p {
 }
 
 .slide {
-    width: 0;
-    height: 0;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-in;
+    display: none;
 }
 
 .slide--active {
-    transform: translateX(0);
-    height: 100%;
-    width: 100%;
+    display: block;
 }
 
 .slide--active img {
@@ -233,10 +228,11 @@ h1,h2,h3,p {
 
 .about__image {
     float: right;
+    margin-bottom: 50px;
 }
 
 .about__text {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .about__text:last-child {
